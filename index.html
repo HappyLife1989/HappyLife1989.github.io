@@ -263,6 +263,181 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/02/WepApp开发实战总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HappyLife">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浮生一日">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/WepApp开发实战总结/" itemprop="url">WepApp开发实战总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:20:31+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  90
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>WebApp慢慢的取代了需要安装在操作系统上的应用，意味着只要我有个浏览器，在任意平台上享受各种各样WebApp的功能。所以浏览器性能越好，那么WebApp将会得到更好的发展。</p>
+<h2 id="Web前端"><a href="#Web前端" class="headerlink" title="Web前端"></a>Web前端</h2><h3 id="HMTL-JS-CSS"><a href="#HMTL-JS-CSS" class="headerlink" title="HMTL + JS + CSS"></a>HMTL + JS + CSS</h3><h2 id="Web后端"><a href="#Web后端" class="headerlink" title="Web后端"></a>Web后端</h2><h2 id="Web服务器"><a href="#Web服务器" class="headerlink" title="Web服务器"></a>Web服务器</h2><h2 id="Web前端和后端的通信"><a href="#Web前端和后端的通信" class="headerlink" title="Web前端和后端的通信"></a>Web前端和后端的通信</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/Java实战经验/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -350,7 +525,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  140
+                  153
                 </span>
               
 
@@ -394,7 +569,8 @@
 <li>性能：需要循环数组结构的数据时，建议使用普通for循环，因为for循环采用下标访问，对于数组结构的数据来说，采用下标访问比较好。需要循环链表结构的数据时，一定不要使用普通for循环，这种做法很糟糕，数据量大的时候有可能会导致系统崩溃。  </li>
 </ul>
 <h4 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h4><ul>
-<li>若为Set或者List对象时，如果是空的话，最好return Collections.EMPTY_LIST;</li>
+<li>生成容器的函数不要返回null，返回空容器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">private static java.util.List&lt;String&gt; getList(int limit) &#123;		</span><br><span class="line">		return Collections.EMPTY_LIST;		</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 
           
@@ -531,7 +707,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  8
+                  347
                 </span>
               
 
@@ -570,7 +746,13 @@
       
         
           
-            <p>自小踢球断断续续，</p>
+            <p>自小踢球断断续续，看球也是断断续续。社会有社会的规则，职场有职场的规则，足球有足球的规则，它们中有的内在的东西是相同的。</p>
+<ul>
+<li>团队与个人：和个人竞技不一样，在足球场上只顾自己施展技能，只会把自己累死，严重点就是拖垮节奏，拖垮队友。因此上场以后，要明白这是团队游戏。不管内部之间是什么情况，但对外是要有力出一孔的职业素养的。</li>
+<li>配合：进球有时候就是那么一瞬间，这一瞬间也许是运气，但最终基于默契。配合好了，1+1&gt;2。配合最基本的前提是知己知彼。人生遇到知己难，球场也是。以他人角度出发，往往跟容易事半功倍。</li>
+<li>灵魂人物：团队是需要组织的，而灵魂人物有意无意间可以是整个团队有效地有条不紊地往前走。同时，又突然间神来之笔，给比赛带来惊喜，惊叹的不只是队友，还有对手。</li>
+<li>信任：球场上每个人都有自己的位置，需要各司其职。每位球员胜任其所在的位置的能力都需要得到信任。没有信任，就没有存在感，即而就是散沙。</li>
+</ul>
 
           
         
@@ -888,7 +1070,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  536
+                  735
                 </span>
               
 
@@ -904,7 +1086,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -938,7 +1120,16 @@
 <li>每个内部类都能独立的继承一个接口的实现，所以无论外部类是否已经继承了某个(接口的)实现，对于内部类都没有影响。内部类使得多继承的解决方案变得完整</li>
 <li>方便将存在一定逻辑关系的类组织在一起，又可以对外界隐藏。高内聚</li>
 <li>实现事件驱动系统</li>
-<li>闭包</li>
+<li>闭包是一种能被调用的对象，它保存了创建它的作用域的信息。</li>
+</ul>
+<h3 id="Java并发"><a href="#Java并发" class="headerlink" title="Java并发"></a>Java并发</h3><ul>
+<li>并发是更高级的编程了，不懂并发的程序员不能说是高级程序员。学习并发编程就像进入一个全新的领域。Web库类、Servlet、Swing天生的多线程。</li>
+<li>并发要解决的问题大体为：“速度”和“设计可管理性”   <ul>
+<li>并发时上下文切换是需要消耗cpu时间的。说到的速度是相对于阻塞而言。</li>
+<li>并发需要代价的，包含复杂性代价，但是这些代价与在程序设计、资源负载均衡以及用户方便使用方面的改进相比，微不足道。</li>
+</ul>
+</li>
+<li>并发是用于多处理器编程的基本工具。</li>
 </ul>
 
           
@@ -1218,7 +1409,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1229,7 +1420,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1240,7 +1431,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
