@@ -1910,7 +1910,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4aff2e;
+  background: #b029ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2474,6 +2474,14 @@ pre .javascript .function {
   content: "|";
   padding-left: 10px;
 }
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
+}
 .use-motion .post {
   opacity: 0;
 }
@@ -2869,7 +2877,7 @@ hr {
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title,
@@ -2914,7 +2922,7 @@ hr {
   margin: 0;
 }
 .posts-expand .post-tags {
-  text-align: center;
+  text-align: left;
 }
 .posts-expand .post-tags a {
   padding: 1px 5px;
