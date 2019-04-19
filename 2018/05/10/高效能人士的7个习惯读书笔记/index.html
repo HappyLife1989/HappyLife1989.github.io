@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="浮生一日">
 <meta property="og:description" content="前言 原则： 当世上充满变数、纷争和混乱的时候，人们需要一个安全的港湾，一个能再迷茫时指点迷津的灯塔。 没有原则就没有效率，没有原则就没有个性。 伟大的领导始于塑造性格，要做一个领导首先你要知道自己是谁，这是你做事的关键。 活在当下，品味生活的精华 领导力是清晰的支出别人的价值和潜力，使得对方受到鼓舞从而有所意识。 补充：也是让别人看到希望。 人类面临的最普遍的几种挑战 恐惧感和不安全感 — 即使">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-08T16:47:28.101Z">
+<meta property="og:updated_time" content="2019-04-19T06:33:44.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="高效能人士的7个习惯读书笔记">
 <meta name="twitter:description" content="前言 原则： 当世上充满变数、纷争和混乱的时候，人们需要一个安全的港湾，一个能再迷茫时指点迷津的灯塔。 没有原则就没有效率，没有原则就没有个性。 伟大的领导始于塑造性格，要做一个领导首先你要知道自己是谁，这是你做事的关键。 活在当下，品味生活的精华 领导力是清晰的支出别人的价值和潜力，使得对方受到鼓舞从而有所意识。 补充：也是让别人看到希望。 人类面临的最普遍的几种挑战 恐惧感和不安全感 — 即使">
@@ -359,8 +359,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/阅读笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">阅读笔记</span>
+                  <a href="/categories/阅读/" itemprop="url" rel="index">
+                    <span itemprop="name">阅读</span>
                   </a>
                 </span>
 
@@ -600,6 +600,9 @@
           
   <div class="comments" id="comments">
     
+      <div id="gitalk-container"></div>
+      
+    
   </div>
 
 
@@ -649,7 +652,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -660,7 +663,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -671,7 +674,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -972,6 +975,23 @@ $(function() {
 
 
 
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'Client ID',
+          clientSecret: 'Client Secret',
+          repo: '仓库名称',
+          owner: 'github帐号',
+          admin: ['github帐号'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
 

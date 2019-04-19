@@ -313,10 +313,10 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-                目前共计 14 个标签
+                目前共计 16 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Android/" style="font-size: 12px; color: #ccc">Android</a> <a href="/tags/Java/" style="font-size: 30px; color: #111">Java</a> <a href="/tags/Web/" style="font-size: 12px; color: #ccc">Web</a> <a href="/tags/人文，幸福/" style="font-size: 12px; color: #ccc">人文，幸福</a> <a href="/tags/感悟/" style="font-size: 30px; color: #111">感悟</a> <a href="/tags/流程/" style="font-size: 12px; color: #ccc">流程</a> <a href="/tags/生活感悟/" style="font-size: 12px; color: #ccc">生活感悟</a> <a href="/tags/羽毛球/" style="font-size: 12px; color: #ccc">羽毛球</a> <a href="/tags/自我提升/" style="font-size: 30px; color: #111">自我提升</a> <a href="/tags/读书笔记/" style="font-size: 12px; color: #ccc">读书笔记</a> <a href="/tags/调研/" style="font-size: 30px; color: #111">调研</a> <a href="/tags/足球/" style="font-size: 12px; color: #ccc">足球</a> <a href="/tags/运动/" style="font-size: 30px; color: #111">运动</a> <a href="/tags/项目管理/" style="font-size: 12px; color: #ccc">项目管理</a>
+              <a href="/tags/Android/" style="font-size: 12px; color: #ccc">Android</a> <a href="/tags/Java/" style="font-size: 21px; color: #6f6f6f">Java</a> <a href="/tags/Web/" style="font-size: 12px; color: #ccc">Web</a> <a href="/tags/人文，幸福/" style="font-size: 12px; color: #ccc">人文，幸福</a> <a href="/tags/感悟/" style="font-size: 21px; color: #6f6f6f">感悟</a> <a href="/tags/投资/" style="font-size: 12px; color: #ccc">投资</a> <a href="/tags/流程/" style="font-size: 12px; color: #ccc">流程</a> <a href="/tags/生活感悟/" style="font-size: 12px; color: #ccc">生活感悟</a> <a href="/tags/羽毛球/" style="font-size: 12px; color: #ccc">羽毛球</a> <a href="/tags/自我提升/" style="font-size: 30px; color: #111">自我提升</a> <a href="/tags/自我提升，感悟/" style="font-size: 12px; color: #ccc">自我提升，感悟</a> <a href="/tags/读书笔记/" style="font-size: 21px; color: #6f6f6f">读书笔记</a> <a href="/tags/调研/" style="font-size: 21px; color: #6f6f6f">调研</a> <a href="/tags/足球/" style="font-size: 12px; color: #ccc">足球</a> <a href="/tags/运动/" style="font-size: 21px; color: #6f6f6f">运动</a> <a href="/tags/项目管理/" style="font-size: 12px; color: #ccc">项目管理</a>
             </div>
           </div>
         
@@ -337,6 +337,9 @@
 
           
   <div class="comments" id="comments">
+    
+      <div id="gitalk-container"></div>
+      
     
   </div>
 
@@ -378,7 +381,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -389,7 +392,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -400,7 +403,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -685,6 +688,23 @@ $(function() {
 
 
 
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'Client ID',
+          clientSecret: 'Client Secret',
+          repo: '仓库名称',
+          owner: 'github帐号',
+          admin: ['github帐号'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
 
